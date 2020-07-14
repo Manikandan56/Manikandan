@@ -10,7 +10,7 @@ def getfile(request):
         response['Content-Disposition']='attachment'; filename="file.csv"
         database=mycollection.objects.all()
         writer=csv.writer(response)
-        rows = 0       D:\DJANGO\PyCharm 2020.1.1\Manikandan
+        rows = 0       
         for mycollection in database:
         writer.writerow(['Transaction_date','Product','Price','Payment_Type','Name','City','State','Country','Account_created'
         ,'last_login','Latutude','Longtitude'])
