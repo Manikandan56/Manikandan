@@ -4,7 +4,7 @@ import pandas as pd
 import sys, getopt, pprint
 from pymongo import MongoClient
 
-csvfile = open('r')
+csvfile = open('myfile.csv','r')
 reader = csv.DictReader(csvfile)
 mongo_client = MongoClient()
 header = ['Transaction_date', 'Product', 'Price', 'Payment_Type', 'Name', 'City', 'State', 'Country', 'Account_created'
