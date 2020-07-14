@@ -20,4 +20,8 @@ class my_database(models.Model):
     def get_multiple_data():
         data = collection.find()
         return list(data)
+    
+A=my_database() 
+A.get_multiple_data()
+
 
