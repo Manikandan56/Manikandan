@@ -7,7 +7,7 @@ from polls.models import mycollection import csv
 def getfile(request):
     if request.method == "POST":
         response=HttpResponse(content_type="text/csv")
-        response['Content-Disposition']='attachment'; filename="file.csv"
+        response['Content-Disposition']='attachment'; filename="myfile.csv"
         database=mycollection.objects.all()
         writer=csv.writer(response)
         rows = 0       
